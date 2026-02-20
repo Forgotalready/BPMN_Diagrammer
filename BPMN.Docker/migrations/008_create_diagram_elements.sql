@@ -1,0 +1,7 @@
+CREATE TABLE diagram_elements(
+    element_id BIGINT PRIMARY KEY REFERENCES elements(id) ON DELETE CASCADE,
+    x INTEGER NOT NULL,
+    y INTEGER NOT NULL,
+    width INTEGER NOT NULL,
+    height INTEGER NOT NULL
+);
