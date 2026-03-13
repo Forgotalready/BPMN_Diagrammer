@@ -1,4 +1,4 @@
-import type {FlowNode} from "./FlowNode";
+import type {FlowNode} from "./FlowNode.ts";
 
 
 export class Flow {

@@ -1,4 +1,4 @@
-import {FlowNode} from "./FlowNode";
+import {FlowNode} from "./FlowNode.ts";
 import {FlowNodeContainer} from "./FlowNodeContainer.ts";
 
 
@@ -14,14 +14,11 @@ export class Task extends FlowNodeContainer{
                 return this._taskType;
         }
 
-        constructor(id: number, x: number, y: number, width: number, height: number, parent: FlowNode | null = null,
+        constructor(id: number, parent: FlowNode | null = null,
                     textDescription: string, taskType: string
         ) {
                 super(
-                    id,
-                    x, y,
-                    width, height,
-                    parent
+                    id, parent
                 );
 
                 this._textDescription = textDescription;

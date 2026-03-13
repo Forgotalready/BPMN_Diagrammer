@@ -1,4 +1,4 @@
-import {FlowNode} from "./FlowNode";
+import {FlowNode} from "./FlowNode.ts";
 import {FlowNodeContainer} from "./FlowNodeContainer.ts";
 
 
@@ -9,12 +9,9 @@ export class Procces extends FlowNodeContainer{
                 return this._name;
         }
 
-        constructor(id: number, x: number, y: number, width: number, height: number, parent: FlowNode | null = null, name: string) {
+        constructor(id: number, parent: FlowNode | null = null, name: string) {
                 super(
-                    id,
-                    x, y,
-                    width, height,
-                    parent
+                    id, parent
                 );
 
                 this._name = name;

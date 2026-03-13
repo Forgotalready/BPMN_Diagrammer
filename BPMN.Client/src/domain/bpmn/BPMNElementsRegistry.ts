@@ -1,5 +1,5 @@
-import type {FlowNode} from "./FlowNode";
-import type {Flow} from "./Flow";
+import type {FlowNode} from "./FlowNode.ts";
+import type {Flow} from "./Flow.ts";
 
 
 export class BPMNElementsRegistry {
@@ -24,8 +24,16 @@ export class BPMNElementsRegistry {
                 this._nodes.set(flowNode.id, flowNode);
         }
 
+        removeNode = (flowNode: FlowNode): void => {
+                this._nodes.delete(flowNode.id);
+        }
+
         addFlow = (flow: Flow): void => {
                 this._flows.set(flow.id, flow);
+        }
+
+        removeFlow = (flow: Flow): void => {
+                this._flows.delete(flow.id);
         }
 
         toJson = (): string => {
@@ -40,7 +48,6 @@ export class BPMNElementsRegistry {
                         metadata: {
                                 nodeCount: this._nodes.size,
                                 flowCount: this._flows.size,
-                                version: '1.0.0'
                         }
                 };
         }

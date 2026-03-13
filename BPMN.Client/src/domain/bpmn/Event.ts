@@ -1,4 +1,4 @@
-import {FlowNode} from "./FlowNode";
+import {FlowNode} from "./FlowNode.ts";
 
 
 export class Event extends FlowNode {
@@ -8,14 +8,11 @@ export class Event extends FlowNode {
                 return this._eventType;
         }
 
-        constructor(id: number, x: number, y: number, width: number, height: number, parent: FlowNode | null = null,
+        constructor(id: number, parent: FlowNode | null = null,
                     eventType: string
         ) {
                 super(
-                    id,
-                    x, y,
-                    width, height,
-                    parent
+                    id, parent
                 );
 
                 this._eventType = eventType;
