@@ -9,8 +9,6 @@ public static class Program
         {
                 var builder = WebApplication.CreateBuilder(args);
                 
-                builder.Services.AddLogging(configure => configure.AddConsole());
-                
                 var host = Environment.GetEnvironmentVariable("POSTGRES_HOST") ?? "localhost";
                 var port = Environment.GetEnvironmentVariable("POSTGRES_PORT") ?? "5432";
                 var db = Environment.GetEnvironmentVariable("POSTGRES_DB") ?? "bpmn_db";
