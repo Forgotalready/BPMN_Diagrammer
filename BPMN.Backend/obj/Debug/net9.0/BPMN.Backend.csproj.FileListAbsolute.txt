@@ -1,8 +1,0 @@
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.csproj.AssemblyReference.cache
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.GeneratedMSBuildEditorConfig.editorconfig
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.AssemblyInfoInputs.cache
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.AssemblyInfo.cs
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.csproj.CoreCompileInputs.cache
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.MvcApplicationPartsAssemblyInfo.cs
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.MvcApplicationPartsAssemblyInfo.cache
-D:\GameProjects\Org\VKR\BPMN\BPMN.Backend\obj\Debug\net9.0\BPMN.Backend.sourcelink.json
