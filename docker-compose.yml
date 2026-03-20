@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: bpmn_db
+    env_file:
+      - .env
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+      - ./BPMN.Database/migrations:/docker-entrypoint-initdb.d
+    restart: always
+
+  backend:
+    build:
+      context: ./BPMN.Backend
+      dockerfile: Dockerfile
+    container_name: bpmn_backend
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    restart: always
+
+volumes:
+  pgdata:
